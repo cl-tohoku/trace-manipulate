@@ -42,6 +42,7 @@ CUDA_VISIBLE_DEVICES=1 python making_correlation_heatmap_tree.py --examples_n_fe
 CUDA_VISIBLE_DEVICES=0 python causal_inference.py --examples_n_features_dir data-bin/{EXAMPLES_DIR_analysis} --model_dir models/{MATH_SOLVER} --model_dir_pt {CHECKPOINTS_DIR} --fixed_end 50 --num_features 10 --eliminate_layer 1 --eliminate_k 3 --idx 20 --target_arg b
 ```
 ![1インスタンスに対するmanipulationの結果](figures/predict_component_change_layer1_k3_idx20_10features_shade.png)
+
 次のコードでデータセット全体におけるManipulationの精度を可視化できる。
 ```bash
 CUDA_VISIBLE_DEVICES=0 python evaluation_inputs_activation_change.py --examples_n_features_dir data-bin/{EXAMPLES_DIR_analysis}  --model_dir models/{MATH_SOLVER} --model_dir_pt {CHECKPOINTS_DIR} --num_features 10  --fixed_end 50 --eliminate_layer 1 --eliminate_k 3  --target_arg b
