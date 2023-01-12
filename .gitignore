@@ -1,0 +1,15 @@
+**/.ipynb_checkpoints
+**/__pycache__
+**/out_*/
+**/*data/
+*.pkl
+*.json
+*.jsonl
+*.bin
+*.pt
+data/
+data-bin/
+models/
+model_pt/
+
+**/.virtual_documents/*
